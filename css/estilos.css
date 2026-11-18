@@ -1,0 +1,314 @@
+
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #252525;
+    background-color: #ffffff;
+}
+
+/* ENCABEZADO */
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #171717;
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+header p {
+    font-size: 24px;
+    color: #cccccc;
+}
+
+/* SECCION 1: SOBRE MI */
+.sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 110px 8%;
+    background-color: #f1f1f1;
+}
+
+.contenido {
+    flex: 2;
+}
+
+.subtitulo {
+    color: #555555;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 52px;
+    margin: 20px 0 45px;
+    color: #171717;
+}
+
+.caracteristicas {
+    display: flex;
+    gap: 35px;
+}
+
+.caracteristicas article {
+    flex: 1;
+}
+
+.icono {
+    display: inline-block;
+    color: #222222;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+article h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #666666;
+}
+
+/* IMAGEN PERSONAL */
+.imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* SECCION 2: MIS INTERESES */
+.intereses {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 110px 8%;
+    gap: 65px;
+}
+
+.lista-intereses {
+    flex: 1;
+}
+
+.lista-intereses article {
+    margin-bottom: 40px;
+}
+
+/* IMAGEN DE INTERESES */
+.imagen-intereses {
+    flex: 1;
+}
+
+.imagen-intereses img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* SECCION 3: MIS LOGROS */
+.proyectos {
+    padding: 110px 8%;
+    background-color: #f1f1f1;
+}
+
+.encabezado-proyectos {
+    max-width: 850px;
+    margin-bottom: 55px;
+}
+
+.descripcion-proyectos {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    gap: 30px;
+}
+
+.tarjeta-proyecto {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.numero-proyecto {
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.tarjeta-proyecto h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: #171717;
+}
+
+.tarjeta-proyecto p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+/* PIE DE PAGINA */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #171717;
+    color: #cccccc;
+    font-size: 20px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 768px) {
+
+    .sobre-mi,
+    .intereses {
+        flex-direction: column;
+        padding: 55px 7%;
+    }
+
+    .caracteristicas {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .imagen img {
+        max-width: 100%;
+        height: 420px;
+    }
+
+    .imagen-intereses img {
+        height: 350px;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column;
+    }
+
+    .proyectos {
+        padding: 55px 7%;
+    }
+
+    .tarjeta-proyecto img {
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+}
+
+/* SECCION 4: VIDEOS Y RECUERDOS */
+.multimedia {
+    padding: 110px 8%;
+    background-color: #ffffff;
+}
+
+.encabezado-multimedia {
+    max-width: 850px;
+    margin-bottom: 55px;
+}
+
+.descripcion-multimedia {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+.contenedor-videos {
+    display: flex;
+    gap: 35px;
+}
+
+.tarjeta-video {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.tarjeta-video h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: #171717;
+}
+
+.tarjeta-video p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.tarjeta-video video {
+    width: 100%;
+    max-height: 350px;
+    background-color: #000000;
+    border-radius: 6px;
+}
+
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 768px) {
+    .multimedia {
+        padding: 55px 7%;
+    }
+
+    .contenedor-videos {
+        flex-direction: column;
+    }
+
+    .tarjeta-video {
+        padding: 20px;
+    }
+
+    .tarjeta-video video {
+        max-height: 280px;
+    }
+
+    .seccion-audio {
+        padding: 25px 15px;
+    }
+}
